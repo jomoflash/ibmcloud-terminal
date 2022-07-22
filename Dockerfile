@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 RUN apt update && apt -y upgrade
-RUN apt install -y apt-transport-https ca-certificates curl
+RUN apt install -y apt-transport-https ca-certificates curl vim
 
 # Installing the Kubernetes command line tool
 RUN curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
@@ -27,4 +27,4 @@ RUN ibmcloud plugin install container-registry
 
 # Installing IBM Cloud Kubernetes Service CLI plug-in
 RUN ibmcloud plugin install container-service
-
+CMD ["bash"]
