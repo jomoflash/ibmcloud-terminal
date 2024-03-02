@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  cli:
+    image: jomoflash/ibmcloud-cli
+    container_name: ibmcloud-cli
+    build:
+      context: .
+      dockerfile: Dockerfile
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t

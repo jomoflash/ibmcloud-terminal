@@ -1,5 +1,6 @@
 # ibmcloud-terminal
-A containerized ibmcloud CLI with plugins pre-installed, kubectl aliased as ks.
+A containerized ibmcloud CLI with plugins pre-installed, kubectl aliased as k.
 
-- `docker build -t ibmcloud-cli .`
-- `docker run -it --name terminal ibmcloud-cli`
+Build with 
+- `docker compose up -d`
+- `docker attach ibmcloud-cli`
